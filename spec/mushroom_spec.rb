@@ -18,32 +18,27 @@ describe Mushroom do
             expect(mushroom.kingdom).to eq("Kingdom")
         end
 
-        it "has a phylum" do
-           
+        it "has a phylum" do           
             mushroom.phylum = "Phylum"
             expect(mushroom.phylum).to eq("Phylum")
         end
         
-        it "has a klass" do
-            
+        it "has a klass" do            
             mushroom.klass = "Class"
             expect(mushroom.klass).to eq("Class")
         end
 
-        it "has a order" do
-            
+        it "has a order" do            
              mushroom.order = "Order"
              expect(mushroom.order).to eq("Order")
         end
 
-        it "has a family" do
-            
+        it "has a family" do            
              mushroom.family = "Family"
              expect(mushroom.family).to eq("Family")
         end
 
-        it "has a genus" do
-            
+        it "has a genus" do            
              mushroom.genus = "Genus"
              expect(mushroom.genus).to eq("Genus")
 
