@@ -1,5 +1,4 @@
 
-
 describe Mushroom do
 end
     context '.new_from_wikipedia' do

@@ -1,5 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
 
 class Mushroom 
     attr_accessor :name, :kingdom, :phylum, :klass, :order, :family, :genus
@@ -12,16 +10,15 @@ end
 
 
 def self.all
-    @@all
-   
+    @@all   
 end
 
 
 def self.new_from_wikipedia(mushroom_info)
     mushroom = Mushroom.new
-    mushroom_info.each{|k, v|
+    mushroom_info.each do |k, v|
     mushroom.send("#{k.to_s}=",v)
-    }
     mushroom
     end
+  end
 end
